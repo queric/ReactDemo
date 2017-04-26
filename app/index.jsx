@@ -4,5 +4,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ProductBox from './Components/ProductBox.jsx';
-
-ReactDOM.render(<ProductBox><span>acadmics</span><span>activist</span></ProductBox>, document.getElementById('content'));
+var data="123";
+ReactDOM.render(<ProductBox title={data}><span>acadmics</span><span>activist</span></ProductBox>, document.getElementById('content'));
