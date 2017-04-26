@@ -1,10 +1,15 @@
 import React from 'react';
+var names = ['Alice', 'Emily', 'Kate'];
 class ProductBox extends React.Component{
+
     render () {
         return (
-            <div className="productBox">
-                <input type="text" name="hello" /> Hello World!vvvvv
-            </div>
+            <ol>{
+                React.Children.map(this.props.children,function (child) {
+                    return <li>{child}</li>
+                })
+            }
+            </ol>
         );
     }
 };
