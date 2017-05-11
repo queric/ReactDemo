@@ -6,8 +6,11 @@ import ReactDOM from 'react-dom';
 import ProductBox from './Components/ProductBox.jsx';
 import ListView from './Components/ListView.jsx';
 var data="888887777";
+function listViewClick() {
+    alert('dd')
+}
 ReactDOM.render(<ProductBox title={data}><span>acadmics</span><span>activist</span></ProductBox>
     , document.getElementById('content'));
 ReactDOM.render(
-    <ListView></ListView>
+    <ListView onClick={listViewClick}></ListView>
     , document.getElementById('content2'));
