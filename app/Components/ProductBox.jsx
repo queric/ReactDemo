@@ -20,7 +20,7 @@ class ProductBox extends React.Component{
         var text = this.state.heihei ? 'like' : 'haven\'t liked';
         return (
             <div>{this.props.title}
-
+333ggxxx99
                 <input type="text" ref="myid" />
                 <ol>
                     {
