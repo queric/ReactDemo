@@ -20,6 +20,12 @@ module.exports = {
         rules: [
             {
                 test: /\.jsx$/, exclude: /node_modules/, use: "babel-loader"
+            },
+            {
+                test: /\.css$/, exclude: /node_modules/, use: 'postcss-loader'
+            },
+            {
+                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/, exclude: /node_modules/, use: 'url-loader'
             }
         ]
     },

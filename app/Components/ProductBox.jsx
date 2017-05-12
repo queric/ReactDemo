@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Button} from 'antd';
+import css from 'antd/dist/antd.css';
 
 class ProductBox extends React.Component{
     constructor(props) {
@@ -20,7 +22,7 @@ class ProductBox extends React.Component{
         var text = this.state.heihei ? 'like' : 'haven\'t liked';
         return (
             <div>{this.props.title}
-
+333ggxxx99
                 <input type="text" ref="myid" />
                 <ol>
                     {
@@ -29,6 +31,7 @@ class ProductBox extends React.Component{
                         })
                     }
                 </ol>{text}
+                <Button type="primary">Primary</Button>
                 <input type="button" value="点击" onClick={this.handleClick.bind(this)}/>
             </div>
         );
