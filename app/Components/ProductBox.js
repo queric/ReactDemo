@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Button} from 'antd';
-import css from 'antd/dist/antd.css';
+import {Button, DatePicker } from 'antd';
 
 class ProductBox extends React.Component{
     constructor(props) {
@@ -11,7 +10,9 @@ class ProductBox extends React.Component{
             heihei:true
         }
     }
-
+    onChange(date, dateString) {
+        console.log(date, dateString);
+    }
     handleClick(){
         //alert(this.state.heihei);
         this.setState({heihei:!this.state.heihei});
@@ -22,7 +23,7 @@ class ProductBox extends React.Component{
         var text = this.state.heihei ? 'like' : 'haven\'t liked';
         return (
             <div>{this.props.title}
-333ggxxx99
+2222
                 <input type="text" ref="myid" />
                 <ol>
                     {
@@ -31,7 +32,11 @@ class ProductBox extends React.Component{
                         })
                     }
                 </ol>{text}
-                <Button type="primary">Primary</Button>
+                <div>
+                    <DatePicker onChange={this.onChange.bind(this)} />
+                    <br />
+                </div>
+                <Button type="primary">Primardddddy</Button>
                 <input type="button" value="点击" onClick={this.handleClick.bind(this)}/>
             </div>
         );

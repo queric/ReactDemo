@@ -6,10 +6,7 @@ class ListView extends React.Component{
     //     super(props);
     // }
     render(){
-        return (<ul onClick={this.props.onClick}>
-            <li>hello1234</li>
-            <li>wocao432177777</li>
-        </ul>)
+        return (<div>67676767{this.props.children}</div>)
     }
 }
 export default ListView;
