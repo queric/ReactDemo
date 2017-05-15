@@ -3,6 +3,9 @@
     "react",
     "es2015"
   ],
+  "plugins": [
+    ["import", { "libraryName": "antd", "style": "css" }]
+  ],
   "env": {
     "development": {
       "plugins": [
